@@ -1,9 +1,9 @@
 schema_version: 1
-id: 9d52c126-a797-4678-9aff-3079f2f109ca
-name: Halloween Goalbar
+id: %extensionId%
+name: %extensionName%
 version: 0.0.1
-description: Goalbar Extension in Halloween style
-summary: Goalbar Extension in Halloween style
+description: %extensionDescription%
+summary: %extensionDescription%
 store_presence:
   images:
     logo: assets/own3d.svg
