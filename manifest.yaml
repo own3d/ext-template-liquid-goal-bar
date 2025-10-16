@@ -131,12 +131,6 @@ compatibilities:
                     separator: false
             - label: Image
               fields:
-                - id: foreground-color
-                  if: '[].includes(values.style)'
-                  type: color
-                  attributes:
-                    label: Color
-                    value: %foregroundColor% #'#FFFFFF'
                 - id: foreground-glow
                   type: group
                   fields:
