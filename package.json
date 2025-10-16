@@ -9,7 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@own3d/sdk": "^0.0.16",
+    "@own3d/sdk": "^0.0.34",
     "decimal.js": "^10.4.3",
     "vue": "^3.5.12",
     "vue-uuid": "^3.0.0",

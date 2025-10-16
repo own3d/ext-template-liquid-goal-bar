@@ -6,10 +6,10 @@ export const goalbarStyles: Record<string, GoalbarStyle> = {
   default:{
     fillClipPath: '/default/fill-clip.svg',
     fillPadding: {
-      top: 0.1702,
-      right: 0.1494,
-      bottom: 0.0604,
-      left: 0.149,
+      top: %topPadding%,
+      right: %rightPadding%,
+      bottom: %bottomPadding%,
+      left: %leftPadding%,
     },
     foregroundMedia: '/default/foreground.png',
     overlayMedia: '/default/overlay.webm',

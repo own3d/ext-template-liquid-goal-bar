@@ -1,7 +1,7 @@
 schema_version: 1
 id: %extensionId%
 name: %extensionName%
-version: 0.0.1
+version: %extensionVersion%
 description: %extensionDescription%
 summary: %extensionDescription%
 store_presence:
