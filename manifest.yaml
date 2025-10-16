@@ -103,7 +103,7 @@ compatibilities:
                   type: color
                   attributes:
                     label: Color
-                    value: %filLColor% # '#FFFFFF'
+                    value: %fillColor% # '#FFFFFF'
                     allow-gradient: true
                 - id: particles
                   type: boolean
@@ -126,7 +126,7 @@ compatibilities:
                         min: 0
                         step: 1
                         label: 'Glow intensity'
-                        value: 0
+                        value: %fillGlowIntensity%
                   attributes:
                     separator: false
             - label: Image
@@ -152,7 +152,7 @@ compatibilities:
                         min: 0
                         step: 1
                         label: 'Glow intensity'
-                        value: 0
+                        value: %foregroundGlowIntensity%
                   attributes:
                     separator: false
                 - id: event-animation
@@ -178,12 +178,12 @@ compatibilities:
                   attributes:
                     label: Style
                     value: # see what we can customize on the form
-                      font-size: 14
-                      font-color: '#FFFFFF'
-                      font-style: normal
-                      text-align: center
-                      font-family: Inter
-                      font-weight: 400
+                      font-size: %titleFontSize% # 14
+                      font-color: %titleFontColor% # '#FFFFFF'
+                      font-style: %titleFontTextTransform% # normal
+                      text-align: %titleFontTextAlign% # center
+                      font-family: %titleFontFamily% # Inter
+                      font-weight: %titleFontWeight% # 400
                       line-height: 1.2
                       text-indent: 0
                       letter-spacing: 0
@@ -194,7 +194,7 @@ compatibilities:
                       type: color
                       attributes:
                         label: 'Glow Color'
-                        value: %fontGlowColor% # transparent
+                        value: %titleFontGlowColor% # transparent
                     - id: title-glow-intensity
                       type: slider
                       attributes:
@@ -202,7 +202,7 @@ compatibilities:
                         min: 0
                         step: 1
                         label: 'Glow intensity'
-                        value: 0
+                        value: %titleFontGlowIntensity%
                   attributes:
                     separator: false
             - label: Goal
@@ -212,12 +212,12 @@ compatibilities:
                   attributes:
                     label: Style
                     value:
-                      font-size: 14
-                      font-color: '#FFFFFF'
-                      font-style: normal
-                      text-align: center
-                      font-family: Inter
-                      font-weight: 400
+                      font-size: %goalFontSize% # 14
+                      font-color: %goalFontColor% # '#FFFFFF'
+                      font-style: %goalFontTextTransform% # normal
+                      text-align: %goalFontTextAlign% # center
+                      font-family: %goalFontFamily% # Inter
+                      font-weight: %goalFontWeight% # 400
                       line-height: 1.2
                       text-indent: 0
                       letter-spacing: 0
@@ -228,7 +228,7 @@ compatibilities:
                       type: color
                       attributes:
                         label: 'Glow color'
-                        value: %fontGlowColor% # transparent
+                        value: %goalFontGlowColor% # transparent
                     - id: target-glow-intensity
                       type: slider
                       attributes:
@@ -236,7 +236,7 @@ compatibilities:
                         min: 0
                         step: 1
                         label: 'Glow intensity'
-                        value: 0
+                        value: %goalFontGlowIntensity% # 0
                   attributes:
                     separator: false
                 - id: target-prefix
@@ -245,7 +245,7 @@ compatibilities:
                     type: text
                     label: Prefix
                     value:
-                      value: ''
+                      value: %goalPrefix% # ''
                       toggled: false
                     optional: true
                 - id: target-suffix
@@ -254,7 +254,7 @@ compatibilities:
                     type: text
                     label: Suffix
                     value:
-                      value: ''
+                      value: %goalSuffix% # ''
                       toggled: false
                     optional: true
             - if: "(values['goal-start-date']?.toggled && values['goal-start-date']?.value) || (values['goal-end-date']?.toggled && values['goal-end-date']?.value)"
