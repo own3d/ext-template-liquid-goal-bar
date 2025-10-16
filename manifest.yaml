@@ -317,7 +317,7 @@ compatibilities:
                       type: color
                       attributes:
                         label: 'Glow color'
-                        value: %fontGlowColor% # transparent
+                        value: %goalFontGlowColor% # transparent
                     - id: dates-glow-intensity
                       type: slider
                       attributes:
@@ -325,7 +325,7 @@ compatibilities:
                         min: 0
                         step: 1
                         label: 'Glow intensity'
-                        value: 0
+                        value: %goalFontGlowIntensity% # 0
                   attributes:
                     separator: false
           type: tabs
