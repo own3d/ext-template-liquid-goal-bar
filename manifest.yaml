@@ -11,5 +11,5 @@ compatibilities:
   config:
     path: config.html
   browser-source:
-    path: browser-source.html
+    path: index.html
 
