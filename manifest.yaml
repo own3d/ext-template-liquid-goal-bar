@@ -8,8 +8,6 @@ store_presence:
   images:
     logo: assets/own3d.svg
 compatibilities:
-  config:
-    path: config.html
   browser-source:
     path: index.html
 
